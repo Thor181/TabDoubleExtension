@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "TabDoubler",
+    "description": "Дублирование вкладки по хоткею",
+    "version": "1.0",
+    "commands": {
+        "doubleTabCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+K"
+            },
+            "description":"Дублировать вкладку"
+        }
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting"
+    ]
+}
